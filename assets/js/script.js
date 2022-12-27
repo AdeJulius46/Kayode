@@ -6,6 +6,24 @@
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
+const darkmode=document.getElementById("darkmode")
+const light=document.getElementById("na")
+const dark=document.getElementById("an")
+
+ darkmode.addEventListener("click",julius)
+  
+  function julius(){
+    document.body.classList.toggle("white");
+    if(document.body.classList.contains("white")){
+      darkmode.innerText="Dark"
+
+    }
+    else{
+    darkmode.innerText="Light"
+    }
+
+  }
+
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
